@@ -26,7 +26,7 @@ def first(message):
 
     if username not in user_id_and_user_name.keys():
         first_name = message.from_user.first_name
-        bot.send_message(message.chat.id, "Добро пожаловать, {0}!".format(first_name))
+        bot.send_message(message.chat.id, "Добро пожаловать, , как дела {0}!".format(first_name))
         user_id_and_user_name[username] = message.from_user.id
         global chat_id
         chat_id = message.chat.id
